@@ -1,0 +1,10 @@
+policies:
+  - name: iam-detect-admin-access
+    resource: iam-role
+    filters:
+      - type: has-inline-policy
+        value: true
+      - type: policy
+        key: PolicyDocument.Statement[?Effect=='Allow'].Action
+        op: contains
+        value: "*"

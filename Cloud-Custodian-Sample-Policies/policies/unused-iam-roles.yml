@@ -1,0 +1,6 @@
+policies:
+  - name: unused-iam-roles
+    resource: iam-role
+    filters:
+      - type: unused
+        days: 60

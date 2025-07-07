@@ -1,0 +1,5 @@
+policies:
+  - name: rds-unencrypted
+    resource: rds
+    filters:
+      - StorageEncrypted: false

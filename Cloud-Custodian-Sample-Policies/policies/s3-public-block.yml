@@ -1,0 +1,13 @@
+policies:
+  - name: s3-block-public-access
+    resource: s3
+    filters:
+      - type: value
+        key: "PublicAccessBlockConfiguration.IgnorePublicAcls"
+        value: false
+    actions:
+      - type: set-public-block
+        block_public_acls: true
+        ignore_public_acls: true
+        block_public_policy: true
+        restrict_public_buckets: true
