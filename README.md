@@ -64,7 +64,7 @@ Experienced Cloud Architect with a focus on delivering scalable, secure, and cos
 
 ---
 
-### ✅ 4. Modular Terraform EKS Microservices Platform
+### ✅ 4. Modular Terraform EKS Microservices Platform (placed as a separate repo in the root)
 
 **Use Cases:**  
 - VPC, IAM, EKS, RDS modules with Helm-based observability  
