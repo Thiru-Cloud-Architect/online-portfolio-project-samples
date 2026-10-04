@@ -1,0 +1,14 @@
+name: Agent Gate
+on:
+  pull_request:
+permissions:
+  contents: read
+  pull-requests: write
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Thiru-Cloud-Architect/agent-pr-gate-app@v1
+        with:
+          fail-on-risk: never
