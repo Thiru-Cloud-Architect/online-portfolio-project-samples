@@ -2,4 +2,4 @@
 
 
 def find_account(cursor, email):
-    cursor.execute("SELECT id FROM accounts WHERE email = '" + email + "'")
+    cursor.execute("SELECT id FROM accounts WHERE email = %s", (email,))
