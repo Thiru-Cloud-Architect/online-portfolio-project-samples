@@ -1,0 +1,15 @@
+version: 1
+paths:
+  - path: demo/prod/**
+    service: portfolio
+    environment: production
+    risk: high
+agents:
+  - name: cursor
+    actors:
+      - cursor[bot]
+    allow:
+      - README.md
+      - docs/**
+    deny:
+      - demo/prod/**
